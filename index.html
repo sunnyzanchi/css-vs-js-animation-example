@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <style>
+      @keyframes bob{
+        0%{transform: translateY(-100px)}
+        100%{
+          transform: translateY(100px);
+        }
+      }
+      body{
+        font-family: cursive;
+      }
+      div{
+        display: flex;
+        margin-left: 20px;
+        height: 200px;
+        width: 200px;
+      }
+      main{
+        display: flex;
+        margin-bottom: 125px;
+      }
+      div#a{
+        animation: 3s bob ease alternate infinite;
+        background: cyan;
+      }
+      div#b{
+        background: aquamarine;
+      }
+      h1{
+        margin-bottom: 100px;
+      }
+      p{
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sort 1,000,000 items</h1>
+    <main>
+      <div id="a">
+        <p>CSS Animation</p>
+      </div>
+      <div id="b">
+        <p>JS Animation</p>
+      </div>
+    </main>
+    <button id="js">JS Sort</button>
+    <button id="ww">WebWorker Sort</button>
+    <script src="/js/index.js" charset="utf-8"></script>
+  </body>
+</html>
